@@ -1,0 +1,145 @@
+.footer {
+  background-color: var(--dark);
+  color: white;
+  padding: var(--spacing-xxl) 0 var(--spacing-xl);
+  margin-top: var(--spacing-xxl);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--spacing-xl);
+}
+
+.footer-logo {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+}
+
+.footer-logo span {
+  color: var(--primary);
+}
+
+.footer-description {
+  color: var(--gray-400);
+  margin-bottom: var(--spacing-lg);
+  max-width: 300px;
+}
+
+.payment-methods {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.payment-icon {
+  height: 30px;
+}
+
+.footer-title {
+  font-size: var(--font-size-md);
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+  padding-bottom: var(--spacing-sm);
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--primary);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: var(--spacing-sm);
+}
+
+.footer-links a {
+  color: var(--gray-300);
+  text-decoration: none;
+  transition: color var(--transition-normal);
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+  color: var(--gray-300);
+}
+
+.contact-icon {
+  margin-right: var(--spacing-sm);
+  min-width: 20px;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--gray-800);
+  color: var(--gray-300);
+  transition: all var(--transition-normal);
+}
+
+.social-links a:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.footer-bottom {
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--gray-800);
+  text-align: center;
+}
+
+.copyright {
+  color: var(--gray-500);
+  font-size: var(--font-size-sm);
+}
+
+@media (min-width: 576px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .footer-column:first-child {
+    grid-column: 1;
+  }
+}
